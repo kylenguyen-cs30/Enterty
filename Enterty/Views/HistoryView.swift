@@ -26,9 +26,7 @@ struct HistoryView: View {
                 ForEach(finishedTitles) { tracking in
                     if let title = findTitle(for: tracking) {
                         HistoryTitleRow(title: title, tracking: tracking)
-
                     }
-
                 }
 
             }.navigationBarTitle("History")

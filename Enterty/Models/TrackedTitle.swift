@@ -9,6 +9,11 @@ struct TrackedTitle: Identifiable, Codable {
 
     var id: Int { tracking_id }
 
+    /*
+     CodingKey: giao thức đặc biệt trong Swift, dùng khi bạn muốn tuỳ chỉnh
+     cách các thuộc tính của struct/class được mã hoá (encode) hoặc giải mã
+     (decode) với các định dạng như JSON, Property List,...
+     */
     enum CodingKeys: String, CodingKey {
         case tracking_id
         case title_id
